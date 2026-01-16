@@ -1,0 +1,134 @@
+/* Reset default browser padding/margin */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Full page layout */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fc;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Wrapper styling */
+.error-wrapper {
+    text-align: center;
+    padding: 20px;
+}
+
+/* Big 404 */
+.error-code {
+    font-size: 8rem;
+    font-weight: bold;
+    color: #2e3a59;
+}
+
+/* Subtitle */
+.error-message {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+    color: #444;
+}
+
+/* Description */
+.error-description {
+    font-size: 1rem;
+    color: #777;
+    margin-bottom: 20px;
+}
+
+/* Button style */
+.home-btn {
+    display: inline-block;
+    text-decoration: none;
+    background-color: #4e73df;
+    color: #fff;
+    padding: 12px 25px;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: 0.3s ease;
+}
+
+/* Hover effect */
+.home-btn:hover {
+    background-color: #3752a6;
+}
+
+/* Day 8*/
+
+.error-wrapper {
+    background: #fff;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+body {
+    background: linear-gradient(135deg, #e0e7ff, #f8f9fc);
+}
+
+.error-code {
+    text-shadow: 0 0 10px rgba(78,115,223,0.4);
+}
+
+.error-code {
+    background: linear-gradient(90deg, #4e73df, #1cc88a);
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+.home-btn {
+    transform: scale(1);
+    transition: 0.3s ease;
+}
+
+.home-btn:hover {
+    transform: scale(1.05);
+}
+
+.error-wrapper {
+    margin: 20px;
+}
+
+.error-img {
+    max-width: 200px;
+    margin-bottom: 20px;
+}
+
+/* ===== RESPONSIVENESS (Day 9) ===== */
+
+/* Mobile screens */
+@media (max-width: 480px) {
+    .error-wrapper {
+        padding: 25px;
+    }
+
+    .error-code {
+        font-size: 5rem;
+    }
+
+    .error-message {
+        font-size: 1.4rem;
+    }
+
+    .error-description {
+        font-size: 0.95rem;
+    }
+
+    .home-btn {
+        padding: 10px 20px;
+        font-size: 0.95rem;
+    }
+}
+
+/* Medium tablets */
+@media (max-width: 768px) {
+    .error-code {
+        font-size: 6rem;
+    }
+}
