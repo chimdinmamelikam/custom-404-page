@@ -483,11 +483,13 @@ footer {
    Contact Page
 ========================== */
 .contact-container {
-    margin-top: 130px; /* leave space for navbar */
     display: flex;
     justify-content: center;
     padding: 20px;
+    margin-top: 0; /* no need for extra top margin since .main-content handles spacing */
 }
+
+
 
 .contact-wrapper {
     max-width: 600px;
@@ -575,5 +577,142 @@ footer {
 
     .contact-wrapper p {
         font-size: 0.95rem;
+    }
+}
+
+.hero-section {
+    margin-top: 130px; /* leave space for navbar */
+    background: linear-gradient(135deg, #e0e7ff, #f8f9fc); /* optional background */
+    padding: 60px 20px;
+}
+
+.hero-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 50px;
+    max-width: 1200px;
+    margin: 0 auto;
+    flex-wrap: wrap; /* allows responsive stacking on smaller screens */
+}
+
+.hero-text {
+    flex: 1;
+    min-width: 300px;
+}
+
+.hero-text h1 {
+    font-size: 2.5rem;
+    color: #2e3a59;
+    margin-bottom: 15px;
+}
+
+.hero-text p {
+    font-size: 1.1rem;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+.hero-image {
+    flex: 1;
+    min-width: 250px;
+    display: flex;
+    justify-content: center;
+}
+
+.hero-image img {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 4px solid #66bfbf; /* first-color */
+}
+
+/* Spacer to push content below fixed navbar */
+.main-content {
+    margin-top: 120px; /* Adjust according to your navbar height */
+}
+
+/* --- RESET --- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* --- PAGE LAYOUT --- */
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(135deg, #eaf6f6, #fcfefe);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    padding: 20px;
+}
+
+/* --- 404 WRAPPER --- */
+.error-wrapper {
+    text-align: center;
+    background: #fff;
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    max-width: 500px;
+}
+
+/* --- BIG 404 --- */
+.error-code {
+    font-size: 8rem;
+    font-weight: 900;
+    background: linear-gradient(90deg, #66bfbf, #f76b8a);
+    -webkit-background-clip: text;
+    color: transparent;
+    text-shadow: 0 0 12px rgba(102, 191, 191, 0.3);
+}
+
+/* --- TITLE TEXT --- */
+.error-message {
+    font-size: 1.8rem;
+    color: #333;
+    margin: 10px 0;
+}
+
+/* --- DESCRIPTION --- */
+.error-description {
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 25px;
+}
+
+/* --- BUTTON --- */
+.home-btn {
+    display: inline-block;
+    background: #66bfbf;
+    color: white;
+    padding: 12px 28px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s ease;
+}
+
+.home-btn:hover {
+    background: #f76b8a;
+    transform: scale(1.05);
+}
+
+/* --- RESPONSIVE --- */
+@media (max-width: 480px) {
+    .error-wrapper {
+        padding: 25px;
+    }
+
+    .error-code {
+        font-size: 5rem;
+    }
+
+    .error-message {
+        font-size: 1.4rem;
     }
 }
